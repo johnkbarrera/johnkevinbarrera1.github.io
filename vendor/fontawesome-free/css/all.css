@@ -4344,6 +4344,13 @@ readers do not read off random characters that represent icons */
 .fa-zhihu:before {
   content: "\f63f"; }
 
+.fa-snowflake:before {
+  content: "\f2dc"; }
+
+.fa-database:before {
+  content: "\f1c0"; }
+
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
