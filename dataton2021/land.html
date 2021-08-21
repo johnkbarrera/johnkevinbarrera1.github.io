@@ -1,194 +1,384 @@
-<div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
-    <h1 class="alt-h1 mb-2 text-white">How agencies build&nbsp;software</h1>
-    <p class="f2-light text-white">Collaborate on code, data, policy, or procurement within your agency or with the&nbsp;public.</p>
-  </div>
-</div><!-- ends .full-width that started in header.html -->
+<!DOCTYPE html>
+<html lang="es">
 
-<div class="container-lg p-responsive">
-  <div class="Box clearfix p-4 p-sm-5 col-md-7 mx-auto mt-6">
-    <div class="float-left">
-      <img class="d-block pr-4" style="width: 80px;" alt="FedRAMP Logo" src="{{"/assets/img/Fedramp-logo.svg" | relative_url}}">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="John Barrera">
+
+  <title>JKBC</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <br>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">John Barrera</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/prueba1.jpg" alt="">
+      </span>
+    </a>
+    <br>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+      </ul>
     </div>
-    <div class="overflow-hidden">
-      <p>GitHub is now Federal Risk and Authorization Management Program (FedRAMP) authorized.
-      </p>
-      <a href="{{"/fedramp/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
-    </div>
-  </div>
-</div>
-
-<section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
-        Collaborate on code
-      </h2>
-      <p class="text-gray">Code collaboration and review are built into the development process with GitHub. Share work, discuss changes, and get feedback in one place to write quality code.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon server height:28 class:"fill-blue d-inline mr-2" aria-label:server %}
-        On your servers or in the cloud
-      </h2>
-      <p class="text-gray">Run GitHub Enterprise on your servers as a virtual appliance, on <a href="{{"/aws-govcloud.html" | relative_url}}">AWS GovCloud</a> or Azure, or let us host the code for you on GitHub.com, whatever your security requires.</p>
-    </div>
-  </div>
-
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon beaker height:28 class:"fill-blue d-inline mr-2" aria-label:beaker %}
-        Foster innovation at your agency
-      </h2>
-      <p class="text-gray">GitHub enables you to easily accept, continuously test, and rapidly deploy new ideas to build better software, faster.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon tools height:28 class:"fill-blue d-inline mr-2" aria-label:tools %}
-        Software built your way
-      </h2>
-      <p class="text-gray">Integrate third party tools, from project management to continuous integration, to build software in the way that works best for your agency.</p>
-    </div>
-  </div>
-
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon code height:28 class:"fill-blue d-inline mr-2" aria-label:code %}
-        InnerSource inside your agency
-      </h2>
-      <p class="text-gray">Build your agency’s software the way open source maintainers build theirs. Transparency and code reuse can help your team build better code.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon lock height:28 class:"fill-blue d-inline mr-2" aria-label:lock %}
-        Enterprise controls that agencies need
-      </h2>
-      <p class="text-gray">Encourage teams to work together while providing essential controls for employees and contractors alike using organizations and LDAP or CAS.</p>
-    </div>
-  </div>
-
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon globe height:28 class:"fill-blue d-inline mr-2" aria-label:globe %}
-        Public engagement, developer community
-      </h2>
-      <p class="text-gray">Engage with more than 40 million developers using GitHub. Publish open source software on GitHub.com. Onboard, train, and recruit developers with ease.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon checklist height:28 class:"fill-blue d-inline mr-2" aria-label:checklist %}
-        Skip the paperwork
-      </h2>
-      <p class="text-gray">GitHub.com's terms of service are approved by the GSA and most plans fall below the micro-purchase threshold. Purchase GitHub Enterprise with major government acquisition schedules.</p>
-    </div>
-  </div>
-
-  <p class="text-center">
-    <a href="https://github.com/features" class="btn btn-outline">Learn more about GitHub &rarr;</a>
-  </p>
-</section>
-
-
-<section class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
-
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">More than just code</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Agencies use GitHub to engage developers and collaborate with the public on open source, open data and open government efforts. GitHub even renders common formats like <a href="https://github.blog/2014-02-14-rendered-prose-diffs/">text</a>, <a href="https://help.github.com/articles/rendering-csv-and-tsv-data">CSV</a>, <a href="https://github.blog/2015-03-17-pdf-viewing/">PDF</a>, <a href="https://help.github.com/articles/mapping-geojson-files-on-github">geospatial data</a> and Jupyter Notebooks.</p>
-
-    <div class="my-4 my-lg-6 clearfix gutter-spacious">
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Open Source</h3>
-        <p><a href="https://github.com/showcases/government" target="_blank">
-          <img src="assets/img/open-source.png" class="img-border" alt="Pull request launching gov.uk"/></a>
-        </p>
-        <small>The UK Government launched GOV.UK with a pull request</small>
-      </div>
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Open Data</h3>
-        <p><a href="https://github.com/showcases/open-data" target="_blank">
-          <img src="assets/img/open-data.png" class="img-border" alt="GeoJSON diff of Illinois 4th Congressional District"/></a>
-        </p>
-        <small>CFPB builds data visualizations and analysis tools with GitHub</small>
-      </div>
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Open Government</h3>
-        <p><a href="https://github.com/showcases/policies" target="_blank">
-          <img src="assets/img/open-gov.png" class="img-border" alt="Project Open Data"/></a>
-        </p>
-        <small>Find the US government’s open source projects at <a href="https://code.gov/">Code.gov</a></small>
-      </div>
-    </div>
-
-    <p class="text-center">
-      <a href="https://github.com/showcases" class="btn btn-outline">See more showcases &rarr;</a>
-    </p>
-
-  </div>
-</section>
-
-<section class="">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="join-the-revolution">Join the Revolution</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Join the thousands of government organizations around the world who collaborate on code, data, policy, and more. See the rest of the <a href="/community">GitHub government community</a>.</p>
-  </div>
-  <div style="overflow: hidden;">
-    {% assign count = 0 %}
-    {% for group in site.data.governments %}
-      {% for org in group[1] %}
-        {% assign count = count | plus:1 %}
-      {% endfor %}
-    {% endfor %}
-    <div class="featured-orgs text-center p-2 m-2">
-      {% for org in site.featured_orgs %}
-      <a href="https://github.com/{{ org }}" class="animate-in">{% avatar user=org size=80 %}</a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section id="get-started" class="mini-section mt-6">
-  <div class="container-lg p-responsive">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Get started today</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Create a free account to get started with GitHub. <a href="mailto:government@github.com">Contact us</a> to learn more about hosting your own GitHub instance.</p>
-
-    <div class="mt-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Sign up for an account</h3>
-        <p class="text-gray"><a href="https://github.com/signup/free" target="_blank">Sign up</a> for an individual GitHub account for free.</p>
-        <p class="text-gray">If you have a personal GitHub account, simply <a href="https://government-community.githubapp.com/">add and confirm</a> your government email.</p>
-      </div>
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Create an organization</h3>
-        <p class="text-gray">An organization is your official presence on GitHub. <a href="https://github.com/organizations/new">Create a free organization</a> after you log in. Open source projects stay free.</p>
-        <p class="text-gray">Prefer to host your own GitHub instance? <a href="mailto:government@github.com">Contact us</a> or <a href="https://enterprise.github.com">request a free trial</a> to get started.
-      </div>
-    </div>
-    <div class="mb-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Join the Peer Group</h3>
-        <p class="text-gray">Join the <a href="https://government-community.githubapp.com/">semi-private group</a> of government employees using GitHub to share best practices for software collaboration.</p>
-        <p class="text-gray">You will have access once the government email associated with your account is verified.
-      </div>
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Learn More</h3>
-        <p class="text-gray">Browse GitHub training resources at <a href="http://training.github.com">training.github.com</a>.</p>
-        <p class="text-gray">Contact <a href="mailto:training@github.com">training@github.com</a> to bring GitHub training to your team.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="contact-a-human" class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 text-center">
-    <span class="text-center">
-      {% octicon person height:42 class:"d-block mx-auto mb-4 text-center fill-gray" aria-label:person %}
+    <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile2 mx-auto" src="img/bosque2.png" alt="">
     </span>
-    <h3 class="alt-h2 mb-4">Talk to a human</h3>
-    <p>Email <a href="mailto:government@github.com">government@github.com</a> to talk to GitHub's government team.</p>
-    <p><a href="https://government-community.githubapp.com/">Post a question</a> in the government community to get feedback from other GitHub users in government.</p>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">John K.
+          <span class="text-primary">Barrera Contreras</span>
+        </h1>
+        <div class="subheading">
+          (+51) 967016935 · 
+          <a href="mailto:johnkevinbarrera@gmail.com">john.barrera@unmsm.edu.pe</a>
+        </div>
+        <p class="lead">
+          I am Systems Engineering and a student in Mathematical Statistics. I know about IT, statistics, Big Data, Machine Learning, Blockchain, IoT, and the development of web applications and mobile apps. I have experience at the bank, telecommunications, researching, and building.
+          I worked as a research assistant in Cryptocurrency Technologies and Blockchain, also in data analysis, NLP, and artificial intelligence. 
+          I am interested in projects that involve Big Data, statistics, ML, and Data Science, especially in social projects and with a big community and ecological spirit.
+        </p>
+        <p class="lead">
+          <li>Analysis of the Health Network of Metropolitan Lima Against Large-Scale Earthquake - <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-76228-5_32" rel="noopener noreferrer" target="_blank">ISBN:978-3-030-76228-5</a></li>
+        </p>
+        <p class="lead">
+          My resume: 
+          (<a rel="noopener noreferrer" target="_blank" href="documents/Resume_jk.pdf">Spanish</a>) 
+          (<a rel="noopener noreferrer" target="_blank" href="#">English</a>)
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jkbarrera/" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/illarek" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://medium.com/@illarek" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-medium-m"></i>
+          </a>
+          <a href="https://twitter.com/johnkbarrera" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://t.me/jkbarrera" rel="noopener noreferrer" target="_blank">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Data Engineer</h3>    
+            <div class="subheading mb-3">Rappi</div>
+            <p>
+              Data engineer at RappiBank, general business support in everything related to RappiBank data for LATAM, this implies presenting solutions, proposals, and elaboration of pipelines. We are building the platform for new countries and improving it in the countries in which we already have participation.
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2020 - Today</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Big Data Engineer - Data Scientist</h3>    
+            <div class="subheading mb-3">BWIT</div>
+            <p>
+              Leading the construction of a transaction classification module (Items Sorter) for the banking sector, we used algorithms to measure distances to similarities, we modeled inference rules, and created a bag of words, some technologies used were Python, AWS, Nifi, Hadoop, Hive, Teradata, and Bash codes. Also, I collaborated with another project, in the modification and updating of the database models 
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2019 - February 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Big Data Engineer</h3>
+            <div class="subheading mb-3">Indra</div>
+            <p>
+              I collaborated modeling and developing a Big Data architecture for the telecommunications sector. We projected and simulated the flow of the pieces of information fonts to choose a great way of saving it over a Data Lake. Some technologies used were NIFI, Spark, Hadoop, and Hive;  we also used some languages like python, pyspark, SQL, and bash codes. Also, I collaborated with another project, tickets attention for database requirements (generally developing SQL queries).
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2019 - November 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Research Assistant - Data Scientist</h3>
+            <div class="subheading mb-3">CIUP - Centro de Investigación de la Universidad del Pacífico</div>
+            <p>I worked on a research project that proposed a methodology for the analysis of customer behavior in transactional databases using multidimetional tensors, unsupervised learning methods, data mining techniques (pattern mining), and NLP.</p>
+            <p>Blockchain researching, creation of a cryptocurrency from a Bitcoin fork (Learncoin), development of multiple Dapps on the Ethereum platform (proofs of concept), and dissemination of knowledge about Blockchain technology.</p>
+            <p>Development of algorithms in the languages R and Julia, and construction of a library for Julia. Performance tests and comparisons in parallel and serial computing between the statistical programming languages R and Julia.</p>
+
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Mars 2017 - February 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Solutions Assistant - Big Data Engineer</h3>
+            <div class="subheading mb-3">Everis</div>
+            <p>I collaborated in Big Data projects of some Peruvian banks with technologies from the Apache community, databricks, cassandra, kafka among others.
+              I received training in Big Data, Hadoop, Hive, Spark, Sqoop, Kafka, zookeper and HBase; and create multiple proofs of concepts.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2018 - May 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Systems Engineer Passant</h3>
+            <div class="subheading mb-3">ONPE - Oficina Nacional de Procesos Electorales</div>
+            <p>I collaborated with the Cleaning and validation (ETL) of data from the reports of the political organizations, for their later storage and use, this process included, in addition to a cleaning and correction of data validated with the RENIEC Database, a verification and user confirmation (errors were reported by eminent ones)</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2017 - December 2017</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Universidad Nacional Mayor de San Marcos</h3>
+            <div class="subheading mb-3">Master's student in Mathematical Statistics</div>
+            <div>Faculty of Mathematical Sciences</div>
+            <!--<p>GPA: 3.23</p>-->
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2020 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Universidad Nacional Mayor de San Marcos</h3>
+            <div class="subheading mb-3">Bachelor of Systems Engineering</div>
+            <div>Faculty of Computer and Systems Engineering</div>
+            <!--<p>GPA: 3.23</p>-->
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2012 - December 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Universidad de Chile</h3>
+            <div class="subheading mb-3">University Exchange Program</div>
+            <div>Faculty of Economics and Business</div>
+            <!--<p>GPA: 3.56</p>-->
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2016 - December 2016</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+        
+        <div class="subheading mb-3">Publications</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Analysis of the Health Network of Metropolitan Lima Against Large-Scale Earthquake - 
+            <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-76228-5_32" 
+               rel="noopener noreferrer" 
+               target="_blank">ISBN:978-3-030-76228-5
+            </a></li>
+        </ul>
+        <br>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-python"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-java"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-php"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-git"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-aws"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-google"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fas fa-database"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fas fa-snowflake"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            I master the basic languages to work with statistics and artificial intelligence, I also have a repertoire of the most popular libraries and packages in the community.</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            I have mastered many big data oriented cloud technologies, I am currently improving this section.</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+            
+          <li>
+            <i class="fa-li fa fa-graduation-cap text-warning"></i>
+            Recipient of the ALIANZA DEL PACÍFICO scholarship - Chile</li>
+          <br>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>rd</sup>
+            Place - Hackathon Contact Tracing  - Hackathon 2020</li>
+          <li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>rd</sup>
+              Place - IBM CODING DAY: HACKATHON POR UN PERÚ #SINANEMIA - Hackathon 2018</li>
+            <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>rd</sup>
+            Place - HACKATHON ARTTEC - Hackathon 2018</li>
+          <br>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            Office Automation Certification - Centro de Informática (CINFO) - UNMSM</li>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            Data Analysis with Python - cognitiveclass.ai</li>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            Curso Apache Spark: Procesando Big Data - OpenWebinars</li>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            Curso de Hadoop - OpenWebinars</li>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            Curso de Introducción al Big Data - OpenWebinars</li>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            DS101: Introduction to Apache Cassandra™ - Datastax Academy</li>
+          <li>
+            <i class="fa-li fa fa-file text-warning"></i>
+            DS201: DataStax Enterprise Foundations of Apache Cassandra™ - Datastax Academy</li>
+
+
+
+        </ul>
+      </div>
+    </section>
+    
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>I am interested in improving the standard of living in regions disadvantaged by social, political and environmental circumstances. Another of my interests is to create a Start-up, for both purposes I improve my skills every day.</p>
+        <p class="mb-0"> I believe that artificial intelligence, computational power and social sciences are fundamental pillars in this improvement.</p>
+      </div>
+    </section>
+
   </div>
-</section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
